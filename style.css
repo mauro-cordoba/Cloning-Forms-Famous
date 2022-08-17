@@ -20,6 +20,7 @@ header {
     align-items: center;
     text-align: left;
     background-color: var(--color-blue-70);
+    padding: 6px 0;
 }
 
 #logotype {
@@ -105,19 +106,35 @@ main {
 
 main picture {
     width: 60%;
+    display: flex;
+}
+
+main picture #image1 {
+    width: 50%;
+}
+
+main picture #image2 {
+    width: 55%;
 }
 
 main #form-registrer {
     width: 40%;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
+    background-color: #ebeff5;
 }
 
 main #titles {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
-    padding: 1em 0;
+    padding: 0.6em 0;
     color: #0d265a;
+}
+
+main #titles h4 {
+    color: #153d8f;
+    font-weight: 500;
 }
 
 main #fields-registrer {
@@ -127,27 +144,113 @@ main #fields-registrer {
 
 main #fields-registrer input::placeholder {
     color: #2851A3;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    filter: opacity(0.7);
 }
 
 main #fields-registrer input {
     margin: 5px 0;
-    padding: 6px;
+    padding: 8px;
+    border: solid 1px #77a6e4;
+    border-radius: 3px;
 }
 
 main #fields-registrer #name-surname input{
-    width: 25%;
+    width: 30%;
 }
 
 
 main #fields-registrer #email {
-    width: calc(50% + 4px)
+    width: calc(60% + 4px)
 }
 
 main #fields-registrer #re-email {
-    width: calc(50% + 4px)
+    width: calc(60% + 4px)
 }
 
 main #fields-registrer #pass {
-    width: calc(50% + 4px)
+    width: calc(60% + 4px)
+}
+main #date h5 {
+    font-family: 'Roboto', sans-serif;
+    color: #0d265a;
+    font-size: 1.3em;
+    margin: 8px 0 1px 0;
+}
+
+
+main #date input {
+    font-size: 1.4em;
+    margin: 5px 0;
+    text-align: center;
+    padding: 2px;
+    color: #2851A3;
+    filter: opacity(0.7);
+    border: solid 1px #77a6e4;
+}
+
+main #date span {
+    font-family: 'Roboto', sans-serif;
+    color: #2851A3;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+main #gender {
+    margin: 10px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    color: #0d265a;
+}
+
+main #gender span {
+    padding: 5px;
+}
+
+main #terms p {
+    color: #0d265a;
+    width: 40%;
+    font-size: 0.8em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+
+main #done {
+    padding: 20px 0;
+}
+
+main #done #btnDone{
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 50px;
+	text-decoration:none;
+    border: none;
+    border-radius: 7px;
+}
+
+main #done #btnDone:hover {
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
+main #done #btnDone:active {
+	position:relative;
+	top:1px;
+}
+
+main footer {
+    font-family: 'Roboto', sans-serif;
+    color: #0d265a;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 15px 0;
 }

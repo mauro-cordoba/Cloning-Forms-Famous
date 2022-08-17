@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="facebook.ico">
 		<script src="https://kit.fontawesome.com/79dd4f4636.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -35,7 +38,8 @@
     </header>
 		<main>
 				<picture>
-					<img src="#">
+					<img src="/image-facebook.jpg" id="image1">
+						<img src="/image3-face.jpg" id="image2">
 					</picture>
 				<section id="form-registrer">
 					<div id="titles">
@@ -52,20 +56,21 @@
 						<input type="password" placeholder="New Password" id="pass" required>
 					</div>
 					<div id="date">
+						<h5>Birthday</h5>
 						<input type="date">
 						<span>Why do I have to provide my date of birth?</span>
 					</div>
 					<div id="gender">
-						<input type="checkbox" value="Woman">
-						<input type="checkbox" value="Man">
+						<input type="radio" name="gender" value="Female" required><span>Female</span>
+						<input type="radio" name="gender" value="Male" required><span>Male</span>
 						</div>
 					<div id="terms">
 						<p>
 							If you click in Done acept terms and conditions and you has readed Policy of data. Inlcuding the aplication of cookies.
 						</p>
 					</div>
-					<div>
-						<input type="submit" name="Done" id="btnDone">
+					<div id="done">
+						<input type="submit" name="Done" value="Sign Up" id="btnDone">
 					</div>
 					<footer>
 						<p>
