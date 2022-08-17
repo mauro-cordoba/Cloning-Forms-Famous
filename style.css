@@ -1,6 +1,153 @@
-root {
+:root {
     --color-blue-60:  #1877F2;
     --color-blue-70: #2851A3;
-    --fuente-logotype: 'Lucida Sans', 'Facebook Letter Faces', 'sans serif';
+    --color-blue-90: #0d265a;
+    --fuente-logotype: 'Facebook Letter Faces', 'sans serif';
+    --font-text: 'Lucida Sans', 'sans serif';
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    background-color: var(--color-blue-70);
+}
+
+#logotype {
+    width: 20%;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.8em;
+    padding: 0.5em 0em 0.1em 0.2em;
+}
+
+#user-inputs {
+    display: flex;
+    justify-content: right;
+}
+#user-inputs input {
+    padding: 2px;
+}
+
+#registrer-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0.1em 0;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#registrer-email label {
+    padding: 0.2em 0;
+}
+
+#registrer-email span {
+    color: #77a6e4;
+    margin-bottom: 3px;
+}
+
+#header-sesion span {
+    padding-left: 0.2em;
+}
+
+#registrer-pass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 1em;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#registrer-pass label {
+    padding: 0.2em 0;
+}
+
+#registrer-pass span {
+    color: #77a6e4;
+    margin-bottom: 3px;
+}
+
+#header-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.8em;
+}
+
+#header-sign #header-btn {
+    color: white;
+    background-color: #1877F2;
+    padding: 0.3em 0.6em;
+    border: solid 1px #77a6e4;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main picture {
+    width: 60%;
+}
+
+main #form-registrer {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+main #titles {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    padding: 1em 0;
+    color: #0d265a;
+}
+
+main #fields-registrer {
+    display: flex;
+    flex-direction: column;
+}
+
+main #fields-registrer input::placeholder {
+    color: #2851A3;
+    font-size: 1.2em;
+}
+
+main #fields-registrer input {
+    margin: 5px 0;
+    padding: 6px;
+}
+
+main #fields-registrer #name-surname input{
+    width: 25%;
+}
+
+
+main #fields-registrer #email {
+    width: calc(50% + 4px)
+}
+
+main #fields-registrer #re-email {
+    width: calc(50% + 4px)
+}
+
+main #fields-registrer #pass {
+    width: calc(50% + 4px)
+}

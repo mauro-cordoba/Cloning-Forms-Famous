@@ -14,19 +14,22 @@
 			<div id="logotype">
 					<h2>facebook</h2>
 				</div>
-				<div id="user-inputs">
-						<div id="registrer-email">
-							<label>Email or Phone's Number</label>
-								<input type="text" min="10" max="150">
-									<input type="checkbox">
-						</div>
-					<div>
+			<div id="user-inputs">
+					<div id="registrer-email">
+							<label>Email or Phone</label>
+								<input type="text" min="10" max="150" id="header-email">
+							<div id="header-sesion">
+									<input type="checkbox" id="header-sesion">
+										<span>Dont close sesion</span>
+								</div>
+					</div>
+					<div id="registrer-pass">
 						<label>Password</label>
 							<input type="password" min="5" max="50">    
 								<span>Do you forget your password?</span>
 						</div>
-						<div>
-							<input type="submit">
+						<div id="header-sign">
+							<input type="submit" id="header-btn" value="Log In">
 							</div>	
 					</div>
     </header>
@@ -36,15 +39,17 @@
 					</picture>
 				<section id="form-registrer">
 					<div id="titles">
-							<h1>Sign Up</h1>
-								<h4>It's free and will be ever.</h4>
+							<h1>Create an account</h1>
+								<h4>It's free and always will be</h4>
 						</div>
 					<div id="fields-registrer">
-						<input type="text" name="name" id="name" placeholder="Name" required>
-						<input type="text" name="surname" id="surname" placeholder="Surname" required>
-						<input type="email" name="email" id="email" placeholder="Your Email" required>
-						<input type="email" placeholder="Repeat your Email" required>
-						<input type="password" placeholder="Password" required>
+						<div id="name-surname">
+							<input type="text" name="name" id="name" placeholder="Name" required>
+							<input type="text" name="surname" id="surname" placeholder="Surname" required>
+						</div>
+						<input type="email" name="email" id="email" placeholder="Email" required>
+						<input type="email" placeholder="Repeat your Email" id="re-email" required>
+						<input type="password" placeholder="New Password" id="pass" required>
 					</div>
 					<div id="date">
 						<input type="date">
