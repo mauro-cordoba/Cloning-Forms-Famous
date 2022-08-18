@@ -20,18 +20,17 @@
 
 #presentation-image {
 		position: absolute;
-		top: 0;
+		top: 18.5%;
 		left: 0;
 		width: 30vw;
 		height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-		background-color: white;
 }
 
 #presentation-image #image img {
-	width: 100%;
+	width: 150%;
 }
 
 #form-layout {
@@ -45,6 +44,7 @@
 		padding: 1.5rem;
 		border-radius: 10px;
 		background-color: rgb(255, 255, 255, .1);
+		backdrop-filter: blur(4px);
 	}
 
 #main-title {
