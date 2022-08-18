@@ -83,6 +83,7 @@
 	border: none;
 	border-radius: 5px;
 	margin-top: 0.8em;
+	cursor: pointer;
 }
 
 #button-facebook i {
@@ -134,6 +135,7 @@
 	border: none;
 	border-radius: 5px;
 	margin: 0.6em 0;
+	cursor: pointer;
 }
 
 #terms {
