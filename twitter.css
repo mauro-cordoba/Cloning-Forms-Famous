@@ -43,14 +43,12 @@
 
 .conteiner .main-title {
     text-align: left;
-    margin-left: 25px;
 }
 
 .main-title h1 {
     font-family: 'Roboto';
-    letter-spacing: 2px;
-    font-size: 80px;
-    padding: 5px 0;
+    font-size: 5em;
+    padding: .5em 0.5rem;
     margin-bottom: 40px;
 }
 
@@ -70,7 +68,8 @@
 }
 
 .conteiner .buttons-login input {
-    width: 35%;
+    max-width: 35%;
+    min-width: 21.5em;
     margin: 10px 0;
 }
 
@@ -79,18 +78,25 @@
     align-content: center;
     justify-content: center;
     font-family: 'Roboto';
-    width: 35%;
+    max-width: 35%;
+    min-width: 20em;
     text-align: center;
     font-weight: bold;
-    font-size: 15px;
     border: none;
     box-shadow: 1px 1px 2px 2px rgb(163, 162, 162);
     border-radius: 25px;
     background: none;
+    margin-bottom: 10px;
+}
+
+.conteiner .buttons-login #icon span {
+    padding: 10px 6px;
 }
 
 .conteiner .buttons-login #icon img {
-    width: 10%;
+    width: 35px;
+    height: 35px;
+    padding: 4px 0 0 10px;
 }
 
 .conteiner .buttons-login input:nth-of-type(1) {
@@ -117,4 +123,118 @@
     box-shadow: 1px 1px 2px 2px var(--color-ligthblue-btn--);
     border-radius: 25px;
     background: none;
+}
+
+.footer {
+    font-family: 'Roboto';
+    color: var(--color-ligthblue-btn--);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.footer span:nth-of-type(1) {
+    padding-left: 8%;
+}
+
+.footer span:nth-of-type(2) {
+    padding-left: 4%;
+}
+
+.footer span:nth-of-type(3) {
+    padding-left: 5%;
+}
+
+@media screen and (max-width: 1120px) {
+    .conteiner {
+        flex-direction: column;
+    }
+    .image-container img:nth-of-type(1) {
+        display: none;
+    }
+    .conteiner .image-container {
+        width: 100%;
+        position: relative;
+    }
+    .conteiner .registrer-area {
+        position: absolute;
+        padding: 20px;
+        top: 5%;
+        left: 20%;
+        border-radius: 20px;
+        background-color: rgba(253, 253, 253, 0.26);
+        backdrop-filter: blur(3px);
+    }
+    .buttons-login {
+        display:flex ;
+        justify-content: center;
+        align-content: center;
+    }
+    .conteiner .buttons-login input {
+        max-width: 100%;
+    }
+    .conteiner .buttons-login input:nth-of-type(2) {
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .conteiner .buttons-login #icon {
+        max-width: 100%;
+        border: 1px solid black;
+        box-shadow: 1px 1px 1px 1px gray;
+    }
+    .conteiner .footer {
+        text-align: center;
+        padding: 20px 0 40px 0;
+    }
+    .conteiner .footer span {
+        padding-left: unset;
+        padding: 0 10px;
+        text-shadow: 1px 1px 1px black;
+    }
+
+}
+
+@media screen and (min-width: 501px) {
+    .conteiner .image-container img:nth-of-type(2) {
+        display: none;
+    }
+    .conteiner .registrer-area {
+        width: 80%;
+        top: 10%;
+        left: 10%;
+        align-content: center;
+    }
+    
+    .conteiner .main-title h1 {
+        font-size: 3.5em;
+    }
+    .conteiner .main-title span {
+        font-size: 1.5em;
+    }
+    .conteiner .buttons-login {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .conteiner .image-container img:nth-of-type(2) {
+        display: none;
+    }
+    .conteiner .registrer-area {
+        width: 80%;
+        top: 10%;
+        left: 10%;
+        align-content: center;
+    }
+    
+    .conteiner .main-title h1 {
+        font-size: 3.5em;
+    }
+    .conteiner .main-title span {
+        font-size: 1.5em;
+    }
+    .conteiner .buttons-login {
+        margin: 20px 0;
+    }
 }
